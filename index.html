@@ -24,7 +24,7 @@
     })
       .then((response) => response.json())
       .then((data) => setContent(data))
-      .catch((error) => console.error("Error:", error))
+      .catch((error) => console.error("Error:", error));
   }
 
   function setContent(data) {
@@ -45,15 +45,7 @@
 </script>
 
 <div class="container">
-  <div class="col-md-4">
-    <div class="card rounded">
-      <div class="card-image">
-        <span class="card-notify-badge" id="product_name">product</span>
-        <div id="product_image"></div>
-      </div>
-      <div class="card-body text-center">
-        <a class="ad-btn" onclick="btnClick()" href="#">เปิดแอปพลิเคชัน</a>
-      </div>
-    </div>
-  </div>
+  <span class="card-notify-badge" id="product_name">product</span>
+  <div id="product_image"></div>
+  <a class="ad-btn" onclick="btnClick()" href="#">เปิดแอปพลิเคชัน</a>
 </div>
